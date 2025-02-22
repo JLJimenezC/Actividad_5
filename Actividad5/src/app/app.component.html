@@ -1,0 +1,18 @@
+<header>
+  <div>
+    <h1>Deportes al día</h1>
+  </div>
+</header>
+
+<main>
+  <section class="newsForm">
+    <app-blog-form (sendBlogPost)="getDataForm($event)"></app-blog-form>
+  </section>
+
+  <section class="newsList">
+    <h2>Noticias</h2>
+    <app-blog-list [posts]="newsList"></app-blog-list>
+    <!-- Aquí se mostrarán las noticias -->
+  </section>
+
+</main>

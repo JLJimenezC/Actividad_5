@@ -1,0 +1,14 @@
+main{
+    display:flex;
+    gap: 16px;
+
+}
+
+.newsForm{
+    width:35%
+}
+
+.newsList{
+    
+    width:65%
+}
