@@ -1,1 +1,136 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    /* 
+https://serp.co/tools/css-reset/
+<link rel="stylesheet" href="https://css.serp.co/css-reset/reset.css/">
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+}
+.wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
+  /* Contenedor principal de cada noticia */
+.news-item {
+    background-color: #fff; /* Blanco para el fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Separación entre noticias */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto hover para que las noticias se destaquen al pasar el mouse */
+  .news-item:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la noticia */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+  }
+  
+  /* Título de la noticia */
+  .news-item h3 {
+    font-family: 'Roboto', sans-serif; /* Fuente limpia y moderna */
+    font-size: 1.8em; /* Tamaño grande para el título */
+    margin: 0 0 15px 0; /* Separación por debajo del título */
+    color: #333; /* Color oscuro para buen contraste */
+    line-height: 1.4; /* Altura de línea para mejor legibilidad */
+  }
+  
+  /* Imagen de la noticia */
+  .news-item .news-image {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 15px; /* Separación después de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsión */
+  }
+  
+  /* Párrafo de la noticia */
+  .news-item p {
+    font-family: 'Rubik', sans-serif; /* Fuente amigable para el cuerpo de texto */
+    font-size: 1em; /* Tamaño adecuado para el texto */
+    color: #555; /* Color gris suave para el texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 15px; /* Separación antes de los detalles del pie */
+  }
+  
+  /* Footer con la información adicional (autor, fecha, etc.) */
+  .news-footer {
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.9em; /* Tamaño de texto más pequeño */
+    color: #777; /* Gris suave para el pie de la noticia */
+    display: flex;
+    justify-content: space-between; /* Distribuye la información */
+    align-items: center;
+    margin-top: 20px; /* Separación hacia arriba */
+  }
+  
+  /* Estilo para los spans en el footer */
+  .news-footer span {
+    color: #777; /* Gris suave */
+    font-style: italic; /* Cursiva para la parte informativa */
+  }
+  
+  /* Enlaces dentro de la noticia */
+  .news-item a {
+    color: #007BFF; /* Azul para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease;
+  }
+  
+  /* Cambio de color al pasar el ratón sobre los enlaces */
+  .news-item a:hover {
+    color: #0056b3; /* Azul más oscuro cuando se pasa el mouse */
+  }
+  
+
+
