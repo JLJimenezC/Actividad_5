@@ -1,1 +1,40 @@
-<p>blog-form works!</p>
+<section class="form">
+    <h2>Formulario</h2>
+  
+    <form>
+      <!-- Título -->
+      <label for="title">Título:</label>
+      <input id="title" type="text" [(ngModel)]="newBlogPost.title" name="title" required />
+  
+      <!-- URL de la imagen -->
+      <label for="imageUrl">URL de la Imagen:</label>
+      <input id="imageUrl" type="text" [(ngModel)]="newBlogPost.imageUrl" name="imageUrl" required />
+  
+      <!-- Texto de la noticia -->
+      <label for="text">Texto de la noticia:</label>
+      <textarea id="text" [(ngModel)]="newBlogPost.text" name="text" required></textarea>
+  
+      <!-- Nombre del pie de foto -->
+      <label for="imageFooterName">Nombre del pie de foto:</label>
+      <input id="imageFooterName" type="text" [(ngModel)]="newBlogPost.imageFooterName" name="imageFooterName" required />
+  
+      <!-- Fecha de la imagen -->
+      <label for="imageFooterDate">Fecha de la imagen:</label>
+      <input id="imageFooterDate" type="date" [(ngModel)]="newBlogPost.imageFooterDate" name="imageFooterDate" required />
+  
+      <!-- Autor -->
+      <label for="author">Autor:</label>
+      <input id="author" type="text" [(ngModel)]="newBlogPost.author" name="author" required />
+  
+      <!-- Categoría -->
+      <label for="category">Categoría:</label>
+      <input id="category" type="text" [(ngModel)]="newBlogPost.category" name="category" required />
+  
+      <!-- Equipo -->
+      <label for="team">Equipo:</label>
+      <input id="team" type="text" [(ngModel)]="newBlogPost.team" name="team" required />
+  
+      <button (click)="getNew()">Enviar</button>
+    </form>
+  </section>
+  
